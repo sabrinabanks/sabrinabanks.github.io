@@ -1,25 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Link, Switch, Router } from 'react-router-dom'; 
+
+// import {
+//   Link,
+//   DirectLink,
+//   Element,
+//   Events,
+//   animateScroll,
+//   scrollSpy,
+//   scroller
+// } from "react-scroll";
+
+import Navigation from './pages/Navigation.js'; 
+import Projects from './pages/Projects.js'; 
+import Landing from './pages/Landing.js'; 
+import Resume from './pages/Resume.js'; 
+import About from './pages/About.js'; 
+import Contact from './pages/Contact.js'; 
+import Photo from './pages/Photo.js'; 
+import Fermcal from './pages/Fermcal.js'; 
+
+
+// import Fermcal from './pages/Fermcal.js'; 
+// import Honeylistings from './pages/Honeylistings.js'; 
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Navigation />
+       <Landing />
+       <About />
+       <Projects />
+       
+       <Resume />
+       <Contact />
+       <Photo />
     </div>
+  
   );
 }
 
