@@ -30,22 +30,18 @@ function Projects (props) {
 
   const toggle = () => setModal(!modal);
 
-  const maintitle ={
-    color: "#ff0067",
-    fontSize: '10rem',
-    textAlign: "center",
-    fontWeight:'semi-bold',
-    background:'white'
-  }
   const subtitle ={
     color: "#ff0067",
     fontSize: '5rem',
     textAlign: "center",
     fontWeight:'semi-bold',
-    marginTop:'2rem',
-    background:'white'
-   
+    background:"white",
+    border: "#ff0067 2px solid",
+    margin:"50px",
+    
   }
+
+  
   const floating = keyframes`
   0% {
     transform: translate(0, 0px);
@@ -76,23 +72,23 @@ function Projects (props) {
   margin: auto;
   
  `;
+
  
   return (
 
     <div id="projects">
-      <h1 style={maintitle}>Projects</h1>
+
       <div>
         <Row sm="3" >
         <div>
-          <h1 style={subtitle}>Ferm-cal</h1>
-        <a href="https://github.com/Batchbois/ferm-cal">
+        <a href="https://github.com/Batchbois/ferm-cal" style={{textDecoration: 'none'}}>
       <Styledbitfolder1 onClick={toggle}> {buttonLabel}</Styledbitfolder1>
-      </a>
-      {/* <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
-        
+          <h1 style={subtitle} data-target="#fermcal" onClick={toggle}>Ferm-cal</h1>
+          </a>
+      {/* <Modal id="fermcal" isOpen={modal} toggle={toggle} className={className}>
+
         <ModalBody>
-          hello
+          fermcal
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
@@ -102,15 +98,14 @@ function Projects (props) {
       </div>
       
       <div> 
-      <h1 style={subtitle}>Honey Listings</h1>
-      <a href="https://github.com/sabrinabanks/Apartment-app">
+      <a href="https://github.com/sabrinabanks/Apartment-app" style={{textDecoration: 'none'}}>
       <Styledbitfolder2 onClick={toggle}> {buttonLabel}</Styledbitfolder2>
+      <h1 style={subtitle} data-target="#honeylist" onClick={toggle}>Honey Listings</h1>
       </a>
-      {/* <Button color="primary" onClick={toggle}>{buttonLabel}</Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
+      {/* <Modal isOpen={modal} id="honeylist" toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Honey Listings</ModalHeader>
         <ModalBody>
-        hi 
+        honey
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
@@ -119,9 +114,9 @@ function Projects (props) {
       </Modal> */}
       </div>
       <div> 
-      <h1 style={subtitle}>Doll.com</h1>
-      <a href="https://github.com/sabrinabanks/Doll">
+      <a href="https://github.com/sabrinabanks/Doll" style={{textDecoration: 'none'}}>
       <Styledbitfolder3 onClick={toggle}> {buttonLabel}</Styledbitfolder3>
+      <h1 style={subtitle}>Doll.com</h1>
       </a>
       {/* <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>

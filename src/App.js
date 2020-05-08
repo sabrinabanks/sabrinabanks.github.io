@@ -14,6 +14,7 @@ import { BrowserRouter, Route, Link, Switch, Router } from 'react-router-dom';
 // } from "react-scroll";
 
 import Navigation from './pages/Navigation.js'; 
+import Bitnav from './pages/Bitnav.js'; 
 import Projects from './pages/Projects.js'; 
 import Landing from './pages/Landing.js'; 
 import Resume from './pages/Resume.js'; 
@@ -31,10 +32,10 @@ function App() {
 
     <div className="App">
        <Navigation />
+       {/* <Bitnav /> */}
        <Landing />
        <About />
        <Projects />
-       
        <Resume />
        <Contact />
        <Photo />

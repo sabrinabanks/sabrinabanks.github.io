@@ -1,20 +1,10 @@
 import React from "react"
 
 function Webbox2(props) {
-  const maintitle ={
-    color: "#ff0067",
-    fontSize: '8rem',
-    textAlign: "center",
-    fontWeight:'semi-bold',
-    background: 'white',
-    marginLeft: '30%', 
-    marginBottom:'5%'
   
-  }
   return (
    
-    <div>
-    <h1 style={maintitle}>About</h1>
+ 
     <div class="body2">
       <div class="box2">
         <div class="box_header2"  > 
@@ -29,7 +19,7 @@ function Webbox2(props) {
         </p>
     </div>
     </div>
-    </div>
+ 
     
     
 

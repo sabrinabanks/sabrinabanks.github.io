@@ -11,15 +11,7 @@ import { ReactComponent as Linkedin } from '../images/linkedin.svg';
 
 
 function Contact(props) {
-  const maintitle ={
-    color: "#ff0067",
-    fontSize: '8rem',
-    textAlign: "center",
-    fontWeight:'semi-bold',
-    background: 'white',
-    marginRight: '30%',
-  
-  }
+
 
   const floating = keyframes`
   0% {
@@ -48,10 +40,7 @@ function Contact(props) {
 
   return (
     
-    <div id="contact">
-      
-      <h1 style={maintitle}>Contact</h1>
-        
+    <div id="contact">        
       <Webbox3 />
       <Styledbitmail className="bitmailfloat"/>
       <Styledbitmail2 className="bitmailfloat2"/>    

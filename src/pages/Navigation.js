@@ -57,7 +57,7 @@ function Navigation(props) {
       spy={true}
       smooth={true}
       hashSpy={true}
-      offset={-100}
+      offset={-60}
       duration={500}>Projects</Link>
           </li>
           <li>
@@ -76,7 +76,7 @@ function Navigation(props) {
       spy={true}
       smooth={true}
       hashSpy={true}
-      offset={-100}
+      offset={-60}
       duration={500}>Contact</Link>
           </li>
 

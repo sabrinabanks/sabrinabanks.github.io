@@ -1,9 +1,12 @@
 import React from "react"
 import Webbox2 from './Webbox2.js';
+import Webbox from './Webbox.js';
 import { ReactComponent as Bitbubble } from '../images/bitbubble.svg';
 import styled, { keyframes } from "styled-components";
+
 // import { ReactComponent as Bitsabs } from '../images/bitsabs.svg';
 import { Container, Row, Col } from 'reactstrap';
+
 
 
 function About(props) {
@@ -29,8 +32,10 @@ function About(props) {
 
   return (
     <div id="about">
+      <Webbox />
       <Webbox2 />
       <Styledbitbubble className="bitbubblefloat"/>
+      
   </div>
 
   )

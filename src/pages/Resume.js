@@ -1,25 +1,42 @@
 import React from "react"
 import Sabrinaresume from '../images/Sabrinaresume.png';
-import Webbox from './Webbox.js';
+import Webboxresume from './Webboxresume.js';
+import { ReactComponent as Bitsabs } from '../images/bitsabs.svg';
+import { ReactComponent as Bitbubble } from '../images/bitbubble.svg';
+import styled, { keyframes } from "styled-components";
+
 import { Container, Row, Col } from 'reactstrap';
 
 
 function Resume(props) {
-  const maintitle ={
-    color: "#ff0067",
-    fontSize: '8rem',
-    textAlign: "center",
-    fontWeight:'semi-bold',
-    marginRight:'30%',
-    background:'white'
-    
+ 
+ 
+    const floating = keyframes`
+  0% {
+    transform: translate(0, 0px);
   }
+  65% {
+    transform: translate(0, 15px);
+  }
+  0% {
+      transform: translate(0, 0px);
+  }
+  //  `;
+  
+   const Styledbitbubble = styled(Bitbubble)`
+   animation: ${floating} infinite 3s;
+   display: inline-block;
+   margin: auto;
+  
+  `;
+
   return (
-    <div id="resume">
-      <h1 style={maintitle}>Resume</h1>
+    <div id="resume" >
       <div className="resumewrap">
-        <img src={Sabrinaresume} alt="Resume for Sabrina Banks" className="resumepic"/>
-       <Webbox />
+       <Webboxresume />
+       <Bitsabs className="bitsabs"/>
+      <Styledbitbubble className="bitbubblefloat2"/>
+
       </div>
     </div>
   )
