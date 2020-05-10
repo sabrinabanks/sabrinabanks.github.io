@@ -87,7 +87,7 @@ function Projects (props) {
           </a>
       {/* <Modal id="fermcal" isOpen={modal} toggle={toggle} className={className}>
 
-        <ModalBody>
+<ModalBody>
           fermcal
         </ModalBody>
         <ModalFooter>
